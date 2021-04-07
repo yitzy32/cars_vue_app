@@ -3,7 +3,9 @@
     <h1>{{ message }}</h1>
     <p v-for="car in cars">
       Color: {{ car.color }} <br>
-      Year: {{ car.year }}
+      Year: {{ car.year }} <br>
+      <router-link v-bind:to="`/cars/${car.id}`">More details</router-link>
+
       </p>
   </div>
 </template>

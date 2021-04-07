@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import CarsIndex from "../views/CarsIndex.vue"
+import CarsShow from "../views/CarsShow.vue"
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -14,6 +16,11 @@ const routes = [
     path: '/cars',
     name: 'CarsIndex',
     component: CarsIndex
+  },
+  {
+    path: '/cars/:id',
+    name: 'CarsShow',
+    component: CarsShow
   },
   {
     path: '/about',
