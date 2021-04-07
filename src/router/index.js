@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import CarsIndex from "../views/CarsIndex.vue"
 import CarsShow from "../views/CarsShow.vue"
+import CarsCreate from "../views/CarsCreate.vue"
 
 Vue.use(VueRouter)
 
@@ -16,6 +17,11 @@ const routes = [
     path: '/cars',
     name: 'CarsIndex',
     component: CarsIndex
+  },
+  {
+    path: '/cars/new',
+    name: 'CarsCreate',
+    component: CarsCreate
   },
   {
     path: '/cars/:id',
